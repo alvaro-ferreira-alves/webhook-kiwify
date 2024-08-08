@@ -3,6 +3,6 @@
 header("Content-Type: application/json");
 
 // Recebe o corpo da requisição (JSON) e converte para um array associativo
-$data = json_decode(file_get_contents('php://input'), true);
+$content = $_POST;
 
-print_r($data);
+print_r($content);
